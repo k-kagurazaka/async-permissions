@@ -64,7 +64,7 @@ class AsyncPermissionsFragment : Fragment() {
     }
 
     private fun shouldShowRequestPermissionsRationale(permissions: Array<out String>): Boolean =
-            permissions.asSequence().any(this::shouldShowRequestPermissionRationale)
+            permissions.any(this::shouldShowRequestPermissionRationale)
 
     companion object {
 
@@ -82,19 +82,18 @@ class AsyncPermissionsFragment : Fragment() {
                 fragmentManager.apply {
                     beginTransaction()
                             .add(it, TAG)
-                            .commitAllowingStateLoss()
-                    executePendingTransactions()
+                            .commitNow()
                 }
             }
         }
 
         private fun checkSelfPermissions(context: Context, permissions: Array<out String>): Boolean =
-                permissions.asSequence().all { checkSelfPermission(context, it) }
+                permissions.all { checkSelfPermission(context, it) }
 
         private fun checkSelfPermission(context: Context, permission: String): Boolean =
                 try {
                     PermissionChecker.checkSelfPermission(context, permission).isGranted
-                } catch (e: Exception) {
+                } catch (t: Throwable) {
                     false
                 }
 
