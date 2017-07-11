@@ -13,9 +13,9 @@ android {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    def coroutines_version = '0.15'
+    def coroutines_version = '0.16'
     compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     compile "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 

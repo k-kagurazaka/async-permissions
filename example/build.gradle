@@ -22,7 +22,7 @@ android {
 
 dependencies {
     // Kotlin
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     // Android Support Libraries
     compile 'com.android.support:appcompat-v7:25.3.1'
