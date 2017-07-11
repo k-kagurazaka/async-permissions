@@ -1,4 +1,4 @@
-package com.kkagurazaka.asyncpermissions
+package com.kkagurazaka.experimental.asyncpermissions
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -68,7 +68,7 @@ class AsyncPermissionsFragment : Fragment() {
 
     companion object {
 
-        private const val TAG: String = "com.kkagurazaka.asyncpermissions.AsyncPermissionsFragment"
+        private const val TAG: String = "com.kkagurazaka.experimental.asyncpermissions.AsyncPermissionsFragment"
 
         private const val REQUEST_CODE = 33
 

@@ -1,4 +1,4 @@
-package com.kkagurazaka.asyncpermissions
+package com.kkagurazaka.experimental.asyncpermissions
 
 import kotlinx.coroutines.experimental.suspendCancellableCoroutine
 

@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.kkagurazaka.asyncpermissions.AsyncPermissions
-import com.kkagurazaka.asyncpermissions.PermissionResult
+import com.kkagurazaka.experimental.asyncpermissions.AsyncPermissions
+import com.kkagurazaka.experimental.asyncpermissions.PermissionResult
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch
 
