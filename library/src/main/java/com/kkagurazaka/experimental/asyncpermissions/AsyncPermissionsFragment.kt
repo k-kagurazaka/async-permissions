@@ -122,6 +122,6 @@ class AsyncPermissionsFragment : Fragment() {
                 val cont: CancellableContinuation<PermissionResult>
         )
 
-        private fun Array<out String>.asKey(): String = this.joinToString(":")
+        private fun Array<out String>.asKey(): String = sorted().joinToString(":")
     }
 }
